@@ -1,0 +1,11 @@
+
+PC -> request ('pergunta')---> Resource
+ ^                         DTO    ^
+ |__ reponse ('resposta') --------|
+
+Quem faz a comunicação entre request/response, resource, service, DAO, model e BD é o DTO
+
+Resource <--DTO--> Service <--DTO--> DAO <--DTO--> DB
+                                             |___> Models
+
+
